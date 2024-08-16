@@ -1,2 +1,2 @@
 python -m pytest
-mypy . --disallow-untyped-defs
+mypy . --disallow-untyped-defs --exclude 'venv|tests'

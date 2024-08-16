@@ -42,9 +42,9 @@ max_of_three(-2,-3,-1) # Retorna: -1
 max_of_three(0,0,0) # Retorna: 0
 ```
 
-### 1.3 leap_year.py
+## 1.3 leap_year.py
 
-Escribir la función `leap_year` que pida al usuario ingresar una año.
+Escribir la función `is_leap_year` que pida al usuario ingresar una año.
 Se debe imprimir en pantalla el mensaje "El año $año es $es_bisiesto" con los valores adecuados.
 Por último la función debe retornar el valor booleando True si es un año biciesto y False en caso de que no lo sea
 
