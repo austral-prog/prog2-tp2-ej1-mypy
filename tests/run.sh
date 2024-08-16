@@ -1,2 +1,2 @@
 python -m pytest
-mypy --disallow-untyped-defs src
+mypy . --disallow-untyped-defs
