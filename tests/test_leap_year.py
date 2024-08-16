@@ -12,6 +12,7 @@ class TP2LeapYearTest(unittest.TestCase):
             results = mock_stdout.getvalue().splitlines()
             self.assertEqual(results[0], "El año 2000 es bisiesto")
             self.assertEqual(r1, True)
+
     @unittest.mock.patch('sys.stdout', new_callable=io.StringIO)
     def test_2001(self, mock_stdout):
         with unittest.mock.patch('builtins.input', return_value="2001"):
@@ -19,6 +20,7 @@ class TP2LeapYearTest(unittest.TestCase):
             results = mock_stdout.getvalue().splitlines()
             self.assertEqual(results[0], "El año 2001 no es bisiesto")
             self.assertEqual(r2, False)
+
     @unittest.mock.patch('sys.stdout', new_callable=io.StringIO)
     def test_1700(self, mock_stdout):
         with unittest.mock.patch('builtins.input', return_value="1700"):
@@ -26,6 +28,7 @@ class TP2LeapYearTest(unittest.TestCase):
             results = mock_stdout.getvalue().splitlines()
             self.assertEqual(results[0], "El año 1700 no es bisiesto")
             self.assertEqual(r3, False)
+
     @unittest.mock.patch('sys.stdout', new_callable=io.StringIO)
     def test_100(self, mock_stdout):
         with unittest.mock.patch('builtins.input', return_value="100"):
